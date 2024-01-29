@@ -1,0 +1,1 @@
+window.addEventListener("scroll",(function(){let e=window.pageYOffset;document.getElementById("parallax-bg").style.backgroundPositionY=.7*e+"px"}));
