@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".parallax-container"),n=document.querySelector(".parallax-bg");e.addEventListener("mousemove",(function(e){var t=e.clientX/window.innerWidth,r=e.clientY/window.innerHeight;n.style.transform="translate(-"+50*t+"px, -"+50*r+"px)"}))}));
+document.addEventListener("scroll",(function(){const t=document.querySelector(".parallax-bg");let e=window.scrollY;t.style.transform="translateY("+.5*e+"px)"}));

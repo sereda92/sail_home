@@ -1,96 +1,278 @@
 @import './blocks/*.sass'
 
 
-// .parallax-container
-//     position: relative
-//     overflow: hidden
-//     width: 100%
-//     height: 400px
+//-------------------
 
-// .parallax-bg
-//     position: absolute
-//     top: 0
-//     left: 0
-//     width: 100%
-//     height: 100%
-//     background-image: url('./../img/back.jpg')
-//     background-size: cover
-//     background-position: center
-//     z-index: -1
-//     transition: transform 0.3s ease
+a
+    color: $color-black
+    text-decoration: none
 
-// .parallax-content 
-//     position: relative
-//     z-index: 1
 
-body
-    position: relative
 
-.parallax-container 
-    // position: relative
-    // overflow: hidden
-    // height: 100px
+._container
+    max-width: 1130px
+    margin: 0 auto
 
-    // height: 100vh
-    // background-image: url('./../img/back.jpg')
-    // background-size: cover
-    // background-attachment: fixed
-    // background-position: center
-    // position: relative
+//---------------------
+
+.header
+    padding: 23px 0 0 0
+
+.wrapper
+    width: 1280px
+    margin: 0 auto
+
+.parallax 
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: hidden
+    // perspective: 1px
+    margin-top: -47px
+
+
 
 .parallax-bg 
-    // position: absolute
-    // top: 0
-    // left: 0
+    position: relative
+    height: 100vh
     // width: 100%
-    // height: 100%
-    // background-image: url('./../img/back.jpg')
-    // background-repeat: no-repeat
-    // background-size: cover
-    // background-position: center
-    // z-index: -1
-    // transform: translateZ(0)
+    background-image: url('./../img/back.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    // transform: translateZ(-2px) scale(3)
+    z-index: -1
 
 
-.content 
-    // padding: 20px
-    // position: absolute
-    // top: 50%
-    // left: 50%
-    // transform: translate(-50%, -50%)
-    // color: #fff
-    // text-align: center
-
-
-
-// .nav
-    // position: sticky
-    // height: 100vh
-
-.nav__list
-    display: flex
-    position: fixed
-    top: 0
-
-
-.parallax-container 
-    position: relative
-    overflow: hidden
-    height: 500px
-
-.parallax-bg 
+.parallax-content 
     position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    overflow: hidden
+    bottom: 116px
+    z-index: 1
+    max-width: 838px
+    h1
+        color: $color-E4D8CC
+        font-size: 57px
+        line-height: 60.48px
+        margin-bottom: 14px
+    p
+        color: $color-C3BAB1
+        font-size: 18px
+        line-height: 28px
+        margin-bottom: 48px
 
-.parallax-bg img 
-    width: 100%
-    height: auto
-    transform: translateZ(0)
+
+//--------------------
+.nav
+    display: flex
+    justify-content: space-between
+.nav__list 
+    display: flex
+    gap: 32px
+.nav__item
+
+    
+.nav__link 
+    text-transform: uppercase
+    color: $color-E4D8CC
+    font-size: 11px
+    line-height: 24px
+    letter-spacing: 1.5px
+
+.title__buton
+    display: flex
+    gap: 16px
+
+.title__btn_wrap
+    padding: 14px 34px
+    border-radius: 100px
+    background: rgba(228, 216, 204, 0.50)
+    color: $color-white
+    font-size: 16px
+    line-height: 24px
+    cursor: pointer
+    &.active
+        border: 2px solid #7837F3
+        background: #7837F3
 
 
-.content 
-    padding: 20px
+//---------------------------------------
+
+.info__block
+    background-color: $color-bg
+.info__items
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 76px 0 75px 0
+
+.info__item
+    max-width: 507px
+    margin-top: auto
+    h2
+        color: $color-101010
+        font-size: 54px
+        line-height: 58px
+        margin-bottom: 15px
+    p
+        color: $color-101010
+        line-height: 22px
+
+
+.img_border
+    img
+        max-width: 100%
+        border-radius: 12px
+
+
+.info__item
+
+.img_border
+
+.item__list
+    h2
+        color: $color-101010
+        font-size: 35px
+        line-height: 45.632px
+        letter-spacing: 1px
+        margin-bottom: 11px
+    p
+        color: $color-101010
+        font-size: 14px
+        line-height: 22.08px
+
+.item__list_number
+    display: flex
+    align-items: center
+    margin-bottom: 18px
+    gap: 12px
+    span
+        padding: 25px 29px
+        border-radius: 100px
+        background: #B99FEA
+        color: $color-101010
+        text-align: center
+        font-size: 38px
+        line-height: 24px
+    p
+        color: $color-101010
+        font-size: 19px
+        line-height: 36px
+
+.item__link
+    max-width: 95px
+    border-bottom: 2px solid $color-101010
+    margin-bottom: 45px
+    a
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: $color-101010
+        font-size: 12px
+        line-height: 30px
+        letter-spacing: 2px
+        text-transform: uppercase
+        &::after
+            content: url('./../img/arrow_down.svg')
+            display: inline-block
+            height: 25px
+
+
+.border_line
+    border-top: 1px solid $color-black
+
+
+//--------------------------------------------
+
+.reviews__block 
+    margin: 116px 0 112px 0
+    display: flex
+    justify-content: space-between
+.reviews__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    >p
+        color: $color-E4D8CC
+        // text-align: center
+        font-size: 24px
+        line-height: 32px
+    >img
+        margin-bottom: 48px
+
+.reviews__user
+    display: flex
+    align-items: center
+    gap: 29px
+    margin-top: 61px
+
+.user_block 
+    >p
+        color: $color-E4D8CC
+        font-size: 14px
+        line-height: 24px
+.user_name 
+
+.user_adress 
+
+
+//----------------------------------
+.questions_block
+    background-color: $color-101010
+    padding: 118px 0 0 0 
+.questions_title
+    h2
+        color: $color-E4D8CC
+        font-size: 36px
+        line-height: 45.632px
+        letter-spacing: 1px
+        margin: 0 0 45px 0
+
+.questions__main
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.questions__nav
+
+.questions__list
+    display: flex
+    flex-direction: column
+    gap: 52px
+
+.questions__item
+
+.questions__link
+    color: $color-B99FEA
+    font-size: 20px
+    line-height: 28px
+
+.questionsnav__link
+
+//------------------------------------------
+
+.about__us__block
+    background-image: url('./../img/back_about.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    padding: 67px 0 98px 0 
+    p
+        color: $color-C3BAB1
+        font-size: 15px
+        line-height: 16px
+        margin-bottom: 24px
+    h2
+        color: $color-bg
+        font-size: 48px
+        line-height: 54px
+        margin-bottom: 24px
+        max-width: 666px
+.about__us__link
+    max-width: 271px
+    border-bottom: 1px solid $color-E4D8CC
+    padding: 0 0 14px 0
+    a
+        color: $color-E4D8CC
+        font-size: 12px
+        line-height: 20px
+        letter-spacing: 2px
+        text-transform: uppercase
