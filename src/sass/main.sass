@@ -73,6 +73,9 @@ a
     font-size: 11px
     line-height: 24px
     letter-spacing: 1.5px
+    transition: opacity .2s ease
+    &:hover
+        opacity: .5
 
 .title__buton
     display: flex
@@ -86,9 +89,15 @@ a
     font-size: 16px
     line-height: 24px
     cursor: pointer
+    transition: background .3s ease
+    &:hover
+        background: rgba(228, 216, 204, 0.2)
     &.active
         border: 2px solid #7837F3
         background: #7837F3
+        
+        &:hover
+            background: rgba(120, 55, 243, .7)
 
 
 //---------------------------------------
@@ -152,6 +161,9 @@ a
     max-width: 95px
     border-bottom: 2px solid $color-101010
     margin-bottom: 45px
+    &:hover
+        border-bottom: 2px solid $color-101010
+        opacity: .4
     a
         display: flex
         align-items: center
@@ -160,11 +172,20 @@ a
         font-size: 12px
         line-height: 30px
         letter-spacing: 2px
-        text-transform: uppercase
         &::after
             content: url('./../img/arrow_down.svg')
             display: inline-block
             height: 25px
+            transition: transform .3s ease
+        &:hover
+            &::after
+                animation: scaleAnimation .5s infinite alternate
+@keyframes scaleAnimation 
+    0% 
+        transform: translateY()
+
+    100%
+        transform: translateY(5px)
 
 
 .border_line
@@ -229,6 +250,9 @@ a
     color: $color-B99FEA
     font-size: 20px
     line-height: 28px
+    transition: opacity .3s ease
+    &:hover
+        opacity: .4
 
 
 //------------------------------------------
@@ -267,6 +291,16 @@ a
             display: inline-block
             width: 20px
             height: 20px
+        &:hover
+            &::after
+                animation: arrowLink .5s infinite alternate
+
+@keyframes arrowLink 
+    0% 
+        transform: translateX()
+
+    100%
+        transform: translateX(5px)
 
 .questions_img
     display: flex
@@ -298,10 +332,16 @@ a
         cursor: pointer
         border-radius: 100px
         border: 1px solid $color-E4D8CC
+        transition: background .3s ease
+        &:hover
+            background: rgba(228, 216, 204, 0.2)
     .active
         border-radius: 100px
         border: 1px solid #7837F3
         background: #7837F3
+        &:hover
+            background: rgba(120, 55, 243, .7)
+
 
 //----------------------------------------
 
@@ -329,6 +369,9 @@ a
 .bonus__link
     color: $color-E4D8CC
     line-height: 0.16px
+    transition: opacity .3s ease
+    &:hover
+        opacity: .4
 .bonus__info
     >p
         color: $color-E4D8CC
