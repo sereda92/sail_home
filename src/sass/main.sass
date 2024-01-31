@@ -26,7 +26,6 @@ a
     height: 100vh
     overflow-x: hidden
     overflow-y: hidden
-    // perspective: 1px
     margin-top: -47px
 
 
@@ -34,12 +33,10 @@ a
 .parallax-bg 
     position: relative
     height: 100vh
-    // width: 100%
     background-image: url('./../img/back.jpg')
     background-size: cover
     background-position: center
     background-repeat: no-repeat
-    // transform: translateZ(-2px) scale(3)
     z-index: -1
 
 
@@ -121,12 +118,6 @@ a
     img
         max-width: 100%
         border-radius: 12px
-
-
-.info__item
-
-.img_border
-
 .item__list
     h2
         color: $color-101010
@@ -209,10 +200,6 @@ a
         color: $color-E4D8CC
         font-size: 14px
         line-height: 24px
-.user_name 
-
-.user_adress 
-
 
 //----------------------------------
 .questions_block
@@ -231,21 +218,18 @@ a
     justify-content: space-between
     align-items: center
 
-.questions__nav
 
 .questions__list
     display: flex
     flex-direction: column
     gap: 52px
 
-.questions__item
 
 .questions__link
     color: $color-B99FEA
     font-size: 20px
     line-height: 28px
 
-.questionsnav__link
 
 //------------------------------------------
 
@@ -271,8 +255,108 @@ a
     border-bottom: 1px solid $color-E4D8CC
     padding: 0 0 14px 0
     a
+        display: flex
+        justify-content: space-between
         color: $color-E4D8CC
         font-size: 12px
         line-height: 20px
         letter-spacing: 2px
         text-transform: uppercase
+        &::after
+            content: '→'
+            display: inline-block
+            width: 20px
+            height: 20px
+
+.questions_img
+    display: flex
+    width: 500px
+    margin-bottom: 71px
+    img
+        width: 100%
+
+
+//-------------------------------------
+
+.bonus__block
+    background-color: $color-101010
+    padding: 78px 0 125px 0 
+.bonus__items
+    display: flex
+    gap: 42px
+.bonus__item
+    p
+        color: $color-E4D8CC
+        font-size: 23px
+        line-height: 24px
+        margin-bottom: 19px
+    button
+        color: #FFFAF5
+        text-align: center
+        line-height: 24px
+        padding: 9px 32px
+        cursor: pointer
+        border-radius: 100px
+        border: 1px solid $color-E4D8CC
+    .active
+        border-radius: 100px
+        border: 1px solid #7837F3
+        background: #7837F3
+
+//----------------------------------------
+
+.bonus__nav_wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-top: 90px
+
+.bonus__nav
+    display: flex
+    justify-content: space-between
+    width: 600px
+
+.bonus__list
+    display: flex
+    flex-direction: column
+    gap: 47px
+    >p
+        color: $color-E4D8CC
+        font-size: 20px
+        line-height: 16px
+.bonus__item
+
+.bonus__link
+    color: $color-E4D8CC
+    line-height: 0.16px
+.bonus__info
+    >p
+        color: $color-E4D8CC
+        text-align: right
+        font-size: 14px
+        line-height: 28px
+        margin-top: 47px
+
+
+.footer
+    // height: 80px
+    padding: 28px 0
+    background-color: $color-101010
+
+
+.footer__list
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+.footer__item
+    display: flex
+    >p,
+    >span
+        color: $color-E4D8CC
+        text-align: right
+        font-size: 11px
+        line-height: 11px
+    >span
+        margin: 0 5px
