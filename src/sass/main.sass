@@ -2,7 +2,8 @@
 
 
 //-------------------
-
+html 
+    scroll-behavior: smooth
 a
     color: $color-black
     text-decoration: none
@@ -34,6 +35,7 @@ a
     position: relative
     height: 100vh
     background-image: url('./../img/back.jpg')
+    background-attachment: fixed
     background-size: cover
     background-position: center
     background-repeat: no-repeat
@@ -177,9 +179,8 @@ a
             display: inline-block
             height: 25px
             transition: transform .3s ease
-        &:hover
-            &::after
-                animation: scaleAnimation .5s infinite alternate
+            animation: scaleAnimation .5s infinite alternate
+
 @keyframes scaleAnimation 
     0% 
         transform: translateY()
@@ -256,6 +257,10 @@ a
 
 
 //------------------------------------------
+.parallax-container
+    position: relative
+    overflow: hidden
+    // height: 500px
 
 .about__us__block
     background-image: url('./../img/back_about.jpg')
@@ -263,6 +268,14 @@ a
     background-position: center
     background-repeat: no-repeat
     padding: 67px 0 98px 0 
+
+    background-attachment: fixed
+    /* Фиксированный фон для параллакса */
+    // color: white
+     /* Цвет текста должен быть виден на фоне */
+    // padding: 50px
+    // text-align: center
+    height: 100%
     p
         color: $color-C3BAB1
         font-size: 15px
@@ -286,14 +299,15 @@ a
         line-height: 20px
         letter-spacing: 2px
         text-transform: uppercase
+        transition: opacity .3s ease
         &::after
             content: '→'
             display: inline-block
             width: 20px
             height: 20px
+            animation: arrowLink .5s infinite alternate
         &:hover
-            &::after
-                animation: arrowLink .5s infinite alternate
+            opacity: .6
 
 @keyframes arrowLink 
     0% 
