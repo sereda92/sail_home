@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  .parallax-content h1 {
+    font-size: 42px;
+  }
+  .title__buton {
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lZGlhLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFFUTtJQUNJOztFQUNSO0lBQ0kiLCJmaWxlIjoibWVkaWEuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweClcbiAgICAucGFyYWxsYXgtY29udGVudFxuICAgICAgICBoMVxuICAgICAgICAgICAgZm9udC1zaXplOiA0MnB4XG4gICAgLnRpdGxlX19idXRvblxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uXG5cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkgYW5kIChtYXgtd2lkdGg6IDEwMjRweClcblxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTAyNHB4KSJdfQ== */

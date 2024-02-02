@@ -11,17 +11,21 @@ a
 
 
 ._container
-    max-width: 1130px
+    max-width: 1100px
+    padding: 0 15px
     margin: 0 auto
 
 //---------------------
 
 .header
     padding: 23px 0 0 0
-
+    position: relative
+    @media screen and (max-width: 768px)
+        padding: 0
 .wrapper
     max-width: 1280px
     margin: 0 auto
+    overflow: hidden
 
 .parallax 
     height: 100vh
@@ -47,6 +51,7 @@ a
     bottom: 116px
     z-index: 1
     max-width: 838px
+    padding: 0 15px 0 0
     h1
         color: $color-E4D8CC
         font-size: 57px
@@ -68,7 +73,6 @@ a
 .nav__list 
     display: flex
     gap: 32px
-.nav__item
 
     
 .nav__link 
@@ -110,6 +114,8 @@ a
     background-color: $color-bg
 .info__items
     display: flex
+    // flex-wrap: wrap
+    gap: 15px
     justify-content: space-between
     align-items: center
     padding: 76px 0 75px 0
@@ -117,6 +123,8 @@ a
 .info__item
     max-width: 507px
     margin-top: auto
+    flex: 1 1 450px
+    margin: 0 auto
     h2
         color: $color-101010
         font-size: 54px
@@ -125,6 +133,8 @@ a
     p
         color: $color-101010
         line-height: 22px
+    img
+        width: 100%
 
 
 .img_border
@@ -200,12 +210,16 @@ a
 
 .reviews__block 
     margin: 116px 0 112px 0
+    padding: 0 15px
+    gap: 50px
+    flex-wrap: wrap
     display: flex
     justify-content: space-between
 .reviews__item
     display: flex
     flex-direction: column
     align-items: center
+    flex: 1 1 auto
     >p
         color: $color-E4D8CC
         // text-align: center
@@ -240,6 +254,7 @@ a
 
 .questions__main
     display: flex
+    gap: 25px
     justify-content: space-between
     align-items: center
 
@@ -422,14 +437,4 @@ a
         margin: 0 5px
 
 
-@media screen and (max-width: 768px)
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px)
-
-
-
-
-@media screen and (min-width: 1024px)
+@import './_media'
