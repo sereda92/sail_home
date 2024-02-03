@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info__block section" id="section1">
+            <div class="info__block">
                 <div class="_container">
                     <div class="info__items item__revers">
                         <div class="info__item">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__block section" id="section2">
+            <div class="reviews__block">
                 <div class="reviews__item">
                     <img src="./img/brackets_orange.svg" alt="brackets">
                     <p>"We will continue to benefit from our house"</p>
@@ -163,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="questions_block section" id="section3">
+            <div class="questions_block">
                 <div class="_container">
                     <div class="questions_title">
                         <h2>Common Questions</h2>
@@ -194,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parallax-container section" id="section4">
+            <div class="parallax-container">
                 <div class="about__us__block">
                     <div class="_container">
                         <p>The Bonus™ Mission</p>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bonus__block section" id="section5">
+            <div class="bonus__block">
                 <div class="_container">
                     <div class="bonus__items">
                         <div class="bonus__item">
@@ -250,30 +250,46 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="bonus__info">
+                        <!-- <div class="bonus__info">
                             <img src="./img/smile.svg" alt="smile">
                             <p>The Smartest Way to Sell Your Home</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div> 
         </main>
         
-    
+    <footer class="footer">
+    <div class="_container">
+        <div class="footer__main">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img/social/tik-tok.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img/social/instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img/social/twiter.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <p>© 2022 Bonus Inc.</p>
+                        <span>|</span>
+                        <p>Privacy Policy</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <script>
-        gsap.to(window, {
-          duration: 5, // Продолжительность скролла в секундах
-          scrollTo: {
-            y: "#section3", // Прокрутка к элементу с id "section3"
-            offsetY: 50 // Дополнительное смещение скролла, если необходимо
-          },
-          ease: "power2.inOut" // Тип анимации скролла
-        });
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</footer>
+    </div>
     <script src="/js/index.bundle.js"></script>
 </body>
 </html>

@@ -114,7 +114,6 @@ a
     background-color: $color-bg
 .info__items
     display: flex
-    // flex-wrap: wrap
     gap: 15px
     justify-content: space-between
     align-items: center
@@ -222,7 +221,6 @@ a
     flex: 1 1 auto
     >p
         color: $color-E4D8CC
-        // text-align: center
         font-size: 24px
         line-height: 32px
     >img
@@ -278,7 +276,6 @@ a
 .parallax-container
     position: relative
     overflow: hidden
-    // height: 500px
 
 .about__us__block
     background-image: url('./../img/back_about.jpg')
@@ -288,11 +285,6 @@ a
     padding: 67px 0 98px 0 
 
     background-attachment: fixed
-    /* Фиксированный фон для параллакса */
-    // color: white
-     /* Цвет текста должен быть виден на фоне */
-    // padding: 50px
-    // text-align: center
     height: 100%
     p
         color: $color-C3BAB1
@@ -349,6 +341,7 @@ a
     padding: 78px 0 125px 0 
 .bonus__items
     display: flex
+    flex-wrap: wrap
     gap: 42px
 .bonus__item
     p
@@ -386,16 +379,21 @@ a
 .bonus__nav
     display: flex
     justify-content: space-between
-    width: 600px
-
+    width: 100%
+    gap: 50px
+    @media screen and (max-width: 580px)
+        flex-direction: column
 .bonus__list
     display: flex
     flex-direction: column
     gap: 47px
     >p
         color: $color-E4D8CC
+        display: inline-block
         font-size: 20px
         line-height: 16px
+        border-bottom: 1px solid $color-E4D8CC
+        padding: 0 0 10px 0
 .bonus__item
 
 .bonus__link
@@ -413,28 +411,6 @@ a
         margin-top: 47px
 
 
-.footer
-    // height: 80px
-    padding: 28px 0
-    background-color: $color-101010
 
-
-.footer__list
-    display: flex
-    width: 100%
-    justify-content: space-between
-    align-items: center
-
-.footer__item
-    display: flex
-    >p,
-    >span
-        color: $color-E4D8CC
-        text-align: right
-        font-size: 11px
-        line-height: 11px
-    >span
-        margin: 0 5px
-
-
+@import './_footer'
 @import './_media'
